@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="runtest" duration-ms="20505" started-at="2021-09-22T14:48:20Z" finished-at="2021-09-22T14:48:40Z">
+    <groups>
+    </groups>
+    <test name="Chrome_Browser" duration-ms="20505" started-at="2021-09-22T14:48:20Z" finished-at="2021-09-22T14:48:40Z">
+      <class name="tests.BookAFlightTest">
+        <test-method status="PASS" signature="Config()[pri:0, instance:tests.BookAFlightTest@5383967b]" name="Config" is-config="true" duration-ms="20" started-at="2021-09-22T20:18:20Z" finished-at="2021-09-22T20:18:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Config -->
+        <test-method status="PASS" signature="launchBrowser(java.lang.String)[pri:0, instance:tests.BookAFlightTest@5383967b]" name="launchBrowser" is-config="true" duration-ms="4048" started-at="2021-09-22T20:18:20Z" finished-at="2021-09-22T20:18:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.BookAFlightTest@5383967b]" name="setup" is-config="true" duration-ms="65" started-at="2021-09-22T20:18:24Z" finished-at="2021-09-22T20:18:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="searchForFlights(builder.BookingDetailsBuilder)[pri:0, instance:tests.BookAFlightTest@5383967b]" name="searchForFlights" duration-ms="2343" started-at="2021-09-22T20:18:24Z" description="Search for flights" data-provider="bookFlight" finished-at="2021-09-22T20:18:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[builder.BookingDetailsBuilder@319988b0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchForFlights -->
+        <test-method name="chooseLowestPricedAirline" signature="chooseLowestPricedAirline(builder.BookingDetailsBuilder)[pri:0, instance:tests.BookAFlightTest@5383967b]" status="PASS" duration-ms="720" finished-at="2021-09-22T20:18:29Z" started-at="2021-09-22T20:18:29Z" depends-on-methods="tests.BookAFlightTest.searchForFlights" data-provider="bookFlight" description="Choose Low cost airline">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[builder.BookingDetailsBuilder@2a39fe6a]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- chooseLowestPricedAirline -->
+        <test-method name="purchaseFlightTicket" signature="purchaseFlightTicket(builder.BookingDetailsBuilder)[pri:0, instance:tests.BookAFlightTest@5383967b]" status="PASS" duration-ms="3665" finished-at="2021-09-22T20:18:35Z" started-at="2021-09-22T20:18:32Z" depends-on-methods="tests.BookAFlightTest.chooseLowestPricedAirline" data-provider="bookFlight" description="Enter details and purchase a ticket">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[builder.BookingDetailsBuilder@410ae9a3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- purchaseFlightTicket -->
+        <test-method status="PASS" signature="bookingConfirmed()[pri:0, instance:tests.BookAFlightTest@5383967b]" name="bookingConfirmed" duration-ms="105" started-at="2021-09-22T20:18:37Z" description="Confirmation page displayed after purchase" depends-on-methods="tests.BookAFlightTest.purchaseFlightTicket" finished-at="2021-09-22T20:18:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bookingConfirmed -->
+        <test-method status="PASS" signature="tearDownBrowser()[pri:0, instance:tests.BookAFlightTest@5383967b]" name="tearDownBrowser" is-config="true" duration-ms="904" started-at="2021-09-22T20:18:40Z" finished-at="2021-09-22T20:18:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownBrowser -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:tests.BookAFlightTest@5383967b]" name="afterTest" is-config="true" duration-ms="1" started-at="2021-09-22T20:18:40Z" description="After test info" finished-at="2021-09-22T20:18:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- tests.BookAFlightTest -->
+    </test> <!-- Chrome_Browser -->
+  </suite> <!-- runtest -->
+</testng-results>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Chrome_Browser"
+           tests="4"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="6.833">
+  <properties />
+  
+  
+            <testcase name="chooseLowestPricedAirline" time="0.720" classname="tests.BookAFlightTest" />
+                <testcase name="searchForFlights" time="2.343" classname="tests.BookAFlightTest" />
+                <testcase name="bookingConfirmed" time="0.105" classname="tests.BookAFlightTest" />
+                <testcase name="purchaseFlightTicket" time="3.665" classname="tests.BookAFlightTest" />
+      
+</testsuite>

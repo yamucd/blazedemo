@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [runtest]">
+  <parameter name="browser" value="chrome"/>
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    <listener class-name="utilities.LogUtil"/>
+    <listener class-name="utilities.ScreenshotUtil"/>
+  </listeners>
+  <test name="Chrome_Browser">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="tests.BookAFlightTest"/>
+    </classes>
+  </test> <!-- Chrome_Browser -->
+</suite> <!-- Failed suite [runtest] -->
